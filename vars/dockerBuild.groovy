@@ -33,8 +33,6 @@ def call(Map config = [:]) {
         echo "Building Docker image ${imageName}:${imageTag}..."
         docker build -t ${imageName}:${imageTag} -t ${imageName}:latest .
 
-        echo " Docker image... built"
-        // docker push ${imageName}:${imageTag}
-        // docker push ${imageName}:latest
+        echo " Docker image... built ....."
     """
 }
