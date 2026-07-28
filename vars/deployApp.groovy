@@ -22,6 +22,6 @@ def call(Map config = [:]) {
     sh """
         echo "Deploying application to Kubernetes..."
         kubectl apply -f ${manifestPath}
-        kubectl rollout status deployment/cvwj-devsecops-demo --timeout=120s
+        kubectl rollout status deployment/maven-app-demo --timeout=120s
     """
 }
